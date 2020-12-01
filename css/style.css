@@ -1,1 +1,45 @@
-/* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0%;
+}
+.Gridwrapper {
+    display: grid;
+    width:  100vw;
+    height: 110vh;
+    grid-template-areas: 
+    "a1 he a2 "
+    "a3 im a4 "
+
+    ;
+    grid-template-columns: 3,1fr;
+    grid-template-rows: 2,1fr;
+    grid-gap: 1px;
+}
+
+.header {
+    grid-area: he;
+    font-size: 50px;
+    margin-left: 40%;
+    margin-right: 60%;
+}
+
+.image {
+    grid-area: im;
+    margin-left: 50%;
+    margin-right: 50%; 
+    width: 100%;
+    object-fit: contain; 
+}
+
+.article1 {
+    grid-area: a1;
+    
+}
+
+.article2 { 
+    grid-area: a2;
+    
+}
+
+body { 
+    background: url("img/resto3.jpg") no-repeat fixed center; 
+  }
